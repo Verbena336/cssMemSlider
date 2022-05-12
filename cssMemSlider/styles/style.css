@@ -1,0 +1,135 @@
+@font-face {
+   font-weight: normal;
+   font-family: 'Neucha';
+   font-style: normal;
+   font-display: swap;
+   src:
+      url("fonts/Neucha-Regular.ttf")
+}
+
+html,
+body {
+   box-sizing: border-box;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   font-family: 'Neucha';
+   font-size: 1.5em;
+}
+
+* {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   width: 50vw;
+   margin: 0 auto;
+   /* overflow: hidden; */
+}
+
+.slider {
+   width: 400%;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+
+.slidertext {
+   width: 400%;
+   display: flex;
+   margin: 0 auto;
+}
+
+.slide {
+   width: 25%;
+   transition: 1s;
+}
+
+.slide img {
+   width: 100%;
+   height: 100%;
+}
+
+.slider input {
+   display: none;
+}
+
+.navigation {
+   display: flex;
+}
+
+.navigation__area {
+   height: 1.3rem;
+   width: 1.3rem;
+   background-color: aquamarine;
+   border-radius: 100%;
+   transition: .3s;
+}
+
+.navigation__button {
+   height: 1.8rem;
+   width: 1.8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   align-self: center;
+}
+
+.navigation__button:hover .navigation__area {
+   background-color: transparent;
+   border: 0.3rem solid rgb(132, 148, 241);
+}
+
+/* .radio:checked {
+   background-color: transparent;
+   border: 0.3rem solid aquamarine;
+} */
+
+/* .textarea {
+   width: 50vw;
+   display: block;
+   overflow: hidden;
+}
+
+.textarea__wrapper {
+   width: 400%;
+}  */
+
+#radio1:checked ~ .first-slide {
+   margin-left: 0;
+}
+#radio2:checked ~ .first-slide {
+   margin-left: -50vw;
+}
+#radio3:checked ~ .first-slide {
+   margin-left: -100vw;
+}
+#radio4:checked ~ .first-slide {
+   margin-left: -150vw;
+}
+
+.textarea__wrapper {
+   width: 50vw;
+   height: 10vh;
+   /* overflow: hidden; */
+}
+
+.textarea__slider {
+   width: 400%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.textarea {
+   width: 50vw;
+}
